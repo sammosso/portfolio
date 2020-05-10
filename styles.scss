@@ -3,6 +3,10 @@ $fontMain: Helvetica, sans-serif;
 $fontHeader: 50px;
 $fontSubs:  20px;
 
+body {
+  font-family: $fontMain;
+}
+
 nav > a {
     display: block;
     text-decoration: none;
