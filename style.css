@@ -1,0 +1,19 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.side-container {
+    background-color: rgb(171, 221, 223);
+    width: 25vw;
+    height: 100vh;
+}
+
+.main {
+    height: 100vh;
+}
