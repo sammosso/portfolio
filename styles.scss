@@ -1,13 +1,11 @@
-$padding: 6px;
-$fontMain: Helvetica, sans-serif;
-$fontHeader: 50px;
+$fontMain: Arial, sans-serif;
+$fontHeader: 75%;
 $fontSubs:  20px;
 
-body {
+body, h1 {
   font-family: $fontMain;
 }
 
-nav > a {
-    display: block;
-    text-decoration: none;
-  }
+h2 {
+  font-size: $fontSubs;
+}
