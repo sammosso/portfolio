@@ -12,25 +12,24 @@ body {
     grid-template-columns: auto auto;
 }
 
+/*Side Column*/
 .side-container {
     background-color:#d0dbdf;
     width: 20vw;
-    display: grid;
-    align-items: flex-end;
-    grid-template-rows: auto auto auto auto;
 }
 
-.side-container > .profile-img, nav {
+.side-container {
+    display: flex;
     display: block;
-    
 }
 
 .profile-img > img {
     width: 75%;
-    object-fit:cover;
-    border-radius:50%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
+/*Main Column*/
 .main {
     position: relative;
     text-align: center;
