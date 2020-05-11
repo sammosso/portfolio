@@ -15,7 +15,6 @@ body {
 .side-container {
     background-color:#d0dbdf;
     width: 20vw;
-    height: 100vh;
     display: grid;
     align-items: flex-end;
     grid-template-rows: auto auto auto auto;
@@ -35,7 +34,8 @@ body {
 .main {
     position: relative;
     text-align: center;
-    color: white;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
 }
 
 .section1 > img {
@@ -43,8 +43,13 @@ body {
 }
 
 .heading {
+    color: #587b8d;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 300%;
 }
