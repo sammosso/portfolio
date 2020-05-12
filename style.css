@@ -3,6 +3,11 @@
     src: url(fonts/PlayfairDisplay-Regular.ttf);
   }
 
+@font-face {
+    font-family: Mont-Reg;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
 a {
     text-decoration: none; 
 }
@@ -10,6 +15,10 @@ a {
 body {
     margin: 0 auto;
     padding: 0 auto;
+}
+
+ul {
+    list-style: none;
 }
 
 .grid-container {
@@ -23,21 +32,31 @@ body {
     width: 20vw;
 }
 
+.side-inner-content {
+    position: fixed;
+    justify-content: space-between;
+}
+
 .profile-img {
-    float: right;
-    margin-right: 50px;
 }
 
 .profile-img > img {
-    float: right;
-    width: 65%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    float: center;
+    width: 45%;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .nav > div {
     text-align: right;
-    margin-right: 50px;
+}
+
+.social {
+    margin-top: 70px;
+    float: right;
+    width: 3rem;
 }
 
 /*Main Column*/
@@ -55,7 +74,7 @@ body {
 .heading {
     color: #587b8d;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -63,3 +82,14 @@ body {
 h1 {
     font-size: 300%;
 }
+
+.skills-list {
+    display: inline-block;
+    column-count: 2;
+    text-align: left;
+}
+
+.skills-list > li {
+    margin: 50px;
+}
+

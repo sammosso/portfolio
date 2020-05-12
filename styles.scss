@@ -1,13 +1,18 @@
-$fontMain: Arial, sans-serif;
+$fontMain: PlayfairRegular, Arial, sans-serif;
+$bodyFont: Mont-Reg;
 $fontHeader: 75%;
 $fontSubs:  250%;
 
 
 
-body, h1 {
+h1, h2 {
   font-family: $fontMain;
 }
 
 h2 {
   font-size: $fontSubs;
+}
+
+body {
+  font-family: $bodyFont;
 }
