@@ -36,25 +36,23 @@ ul {
     position: fixed;
     width: 20%;
     height: 100vh;
-    display: block;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: flex-end;
+    align-items: space-between;
+    align-content: space-around;
+    justify-content: space-between;
+    padding-right: 50px;
 }
 
-.side-inner-content > * {
-
-}
-
-.profile-img > img {
-
-}
-
-.profile-img > img {
-    width: 55%;
+.profile-img {
+    width: 75%;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.nav > div {
-
+.nav > div > a {
+    float: right;
 }
 
 .social {
