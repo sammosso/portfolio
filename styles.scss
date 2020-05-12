@@ -1,5 +1,6 @@
 $fontMain: PlayfairRegular, Arial, sans-serif;
 $bodyFont: Mont-Reg;
+$buttonFont: Mont-Reg;
 $fontHeader: 75%;
 $fontSubs:  250%;
 
@@ -15,4 +16,8 @@ h2 {
 
 body {
   font-family: $bodyFont;
+}
+
+button {
+  font-family: $buttonFont;
 }

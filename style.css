@@ -25,6 +25,22 @@ ul {
     list-style: none;
 }
 
+button {
+    font-size: 16px;
+    width: 25%;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 25px;
+    color: #585858;
+}
+
+button:hover {
+    color: #d0dbdf;
+    background-color: #587b8d;
+    transition: all 1.5s ease;
+}
+
 .grid-container {
     width: 100%;
 }
@@ -42,7 +58,7 @@ ul {
     align-items: space-between;
     align-content: space-around;
     justify-content: space-between;
-    padding-right: 50px;
+    padding-right: 60px;
 }
 
 .profile-img {
@@ -53,10 +69,17 @@ ul {
 
 .nav > div > a {
     float: right;
+    color: #585858;
 }
 
 .social {
-    width: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.social > a {
+    color: #585858;
 }
 
 /*Main Column*/
@@ -66,32 +89,46 @@ ul {
     text-align: center;
 }
 
+/*Welcome*/
+.section1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 .section1 > img {
     width: 100%;
 }
 
-.heading {
-    color: #587b8d;
-}
-
 h1 {
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 300%;
+    color: #ffffff;
 }
 
 .section1, .section2, .section3, .section4 {
     margin-bottom: 100px;
 }
 
-
 /*Skills*/
 .skills-list {
-    display: inline-block;
-    column-count: 2;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     text-align: left;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .skills-list > li {
     margin: 50px;
+}
+
+.img-skill {
+    width: 90%;
 }
 
 
