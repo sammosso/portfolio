@@ -8,6 +8,10 @@
     src: url(fonts/Montserrat-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none; 
 }
@@ -22,18 +26,21 @@ ul {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
+    width: 100%;
 }
 
 /*Side Column*/
 .side-container {
+    box-sizing: border-box;
     background-color:#d0dbdf;
-    width: 20vw;
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    display: block;
 }
 
 .side-inner-content > * {
-    position: fixed;
+
 }
 
 .profile-img > img {
@@ -56,10 +63,9 @@ ul {
 
 /*Main Column*/
 .main {
-    position: relative;
+    width: 80%;
+    float: right;
     text-align: center;
-    display: grid;
-    grid-template-rows: auto auto auto auto;
 }
 
 .section1 > img {
@@ -68,10 +74,6 @@ ul {
 
 .heading {
     color: #587b8d;
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 h1 {
