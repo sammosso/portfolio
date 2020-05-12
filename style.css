@@ -32,13 +32,14 @@ button {
     border-radius: 10px;
     margin-top: 100px;
     padding: 25px;
-    color: #585858;
+    color: #d0dbdf;
+    background-color: #587b8d;
 }
 
 button:hover {
     color: #d0dbdf;
-    background-color: #587b8d;
-    transition: all 1.5s ease;
+    background-color: #585858;
+    transition: all .5s ease;
 }
 
 .grid-container {
@@ -131,9 +132,9 @@ h1 {
     width: 90%;
 }
 
-
 /*Recent Work*/
 .projects {
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
