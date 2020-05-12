@@ -1,3 +1,8 @@
+@font-face {
+    font-family: PlayfairRegular;
+    src: url(fonts/PlayfairDisplay-Regular.ttf);
+  }
+
 a {
     text-decoration: none; 
 }
@@ -16,16 +21,15 @@ body {
 .side-container {
     background-color:#d0dbdf;
     width: 20vw;
-    display: block;
 }
 
 .profile-img {
-    display: flex;
-    justify-content: end;
+    float: right;
+    margin-right: 50px;
 }
 
 .profile-img > img {
-    justify-content: end;
+    float: right;
     width: 65%;
     object-fit: cover;
     border-radius: 50%;
