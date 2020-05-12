@@ -16,17 +16,24 @@ body {
 .side-container {
     background-color:#d0dbdf;
     width: 20vw;
-}
-
-.side-container {
-    display: flex;
     display: block;
 }
 
+.profile-img {
+    display: flex;
+    justify-content: end;
+}
+
 .profile-img > img {
-    width: 75%;
+    justify-content: end;
+    width: 65%;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.nav > div {
+    text-align: right;
+    margin-right: 50px;
 }
 
 /*Main Column*/
