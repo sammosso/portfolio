@@ -140,7 +140,7 @@ h1 {
 
 .img-skill {
     min-width: 60%;
-    width: 90%;
+    max-width: 90%;
 }
 
 /*Recent Work*/
