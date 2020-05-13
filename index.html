@@ -12,23 +12,26 @@
 <body>
     <div class="root">
         <div class="grid-container">
-            <aside class="side-container">                
+            <!--Sidebar Navigation-->
+            <aside class="side-container">      
+                <!--Profile Image-->          
                 <img class="profile-img" src="assests/images/0 (2).jpg" alt="Sarah Mosso profile shot">
+                <!--Nav-->
                 <nav class="nav">
-                    <div class="home"><a href="/index.html">home</a></div>
-                    <div class="skills"><a href="/about.html">skills</a></div>
-                    <div class="portfolio"><a href="/portfolio.html">portfolio</a></div>
-                    <div class="contact"><a href="/contact.html">contact</a>
+                    <div><a href="#top">home</a></div>
+                    <div><a href="#skills">skills</a></div>
+                    <div><a href="#portfolio">portfolio</a></div>
+                    <div><a href="#contact">contact</a>
                     </div>
                 </nav>
+                <!--Social media links-->
                 <div class="social">
-                    <a href="https://www.linkedin.com/in/sammosso/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/sammosso"><i class="fab fa-github-square"></i></a>
-                    <a href="mailto:sarahmosso@outlook.com">a</a>
-                    <!--Add social media links-->
+                    <a href="https://www.linkedin.com/in/sammosso/"><img src="/assests/images/social-media/linkedin.svg" alt="Sarah Mosso's LinkedIn" class="social-img"></a>
+                    <a href="https://github.com/sammosso"><img src="/assests/images/social-media/github.svg" alt="Sarah Mosso's GitHub" class="social-img"></a>
+                    <a href="mailto:sarahmosso@outlook.com"><img src="/assests/images/social-media/mail.svg" alt="Sarah Mosso's email" class="social-img"></a>
                 </div>
             </aside>
-            <div class="main"> <!--Add JS scroll transitions-->
+            <div id="top" class="main"> <!--Add JS scroll transitions-->
                 <!--Section 1: Welcome Image-->
                 <div class="section1">
                     <img src="assests/images/main.jpg" alt="San Diego Beach">
@@ -36,7 +39,7 @@
                         Designer | Developer</h1>
                 </div>
                 <!--Section 2: Top Skills-->
-                <div class="section2">
+                <div id="skills" class="section2">
                     <h2>skills</h2>
                     <ul class="skills-list">
                         <li><img src="/assests/images/skills/design.jpg" alt="design icon" class="img-skill"></li>
@@ -53,14 +56,15 @@
                         <li>Web Accessibility (WCAG)</li>
                     </ul>
                 </div>
-                <!--Section 3: Recent projects-->
-                <div class="section3">
+                <!--Section 3: Projects-->
+                <div id="portfolio" class="section3">
                     <h2>recent work</h2>
                     <div class="projects">
                         <div class="card">
                             <div class="inner">
                                 <a href="" target="_blank"><img src="/assests/images/projects/vit-portfolio.png" alt="Screenshot of Sarah Mosso's portfolio Website" class="msta"></a>
                             </div>
+                            <hr>
                             <div class="inner-caption">
                                 <h3>Vets in Tech - Project</h3>
                                 <p>Front End development of a portfolio website.</p>
@@ -71,6 +75,7 @@
                             <div class="inner">
                                 <a href="http://mstaconnect.azurewebsites.net/" target="_blank"><img src="/assests/images/projects/msta-connect.png" alt="Screenshot of MSTA Connect login page" class="msta"></a>
                             </div>
+                            <hr>
                             <div class="inner-caption">
                                 <h3>MSTA CONNECT</h3>
                                 <p>An internal web application for Microsoft's Military Spouse Technology Academy.</p>
@@ -81,6 +86,7 @@
                             <div class="inner">
                                 <a href=" https://sammosso.github.io/lakesfootball/" target="_blank"><img src="/assests/images/projects/lakes-copy.png" alt="Screenshot of Lakes Football page" class="msta"></a>
                             </div>
+                            <hr>
                             <div class="inner-caption">
                                 <h3>Website Re-Creation</h3>
                                 <p>A duplicated website for development learning.</p>
@@ -91,7 +97,7 @@
                 </div>
                 
                 <!--Section 4: Contact Info-->
-                <div class="section4">
+                <div id="contact" class="section4">
                     <h2>need something?</h2>
                     <p>A new logo? An ad campaign? A custom website?</p>
                     <a href="mailto:sarahmosso@outlook.com"><button>Let's talk.</button></a>
