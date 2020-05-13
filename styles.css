@@ -1,9 +1,11 @@
+h1, h2, h3, p {
+  color: #585858; }
+
 h1, h2 {
   font-family: PlayfairRegular, Arial, sans-serif; }
 
 h2 {
-  font-size: 250%;
-  color: #585858; }
+  font-size: 250%; }
 
 body {
   font-family: Mont-Reg; }

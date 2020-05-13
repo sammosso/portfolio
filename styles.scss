@@ -3,9 +3,12 @@ $bodyFont: Mont-Reg;
 $buttonFont: Mont-Reg;
 $fontHeader: 75%;
 $fontSubs:  250%;
-$subColor: #585858;
+$fontColor: #585858;
 
 
+h1, h2, h3, p {
+  color: $fontColor;
+}
 
 h1, h2 {
   font-family: $fontMain;
@@ -13,7 +16,6 @@ h1, h2 {
 
 h2 {
   font-size: $fontSubs;
-  color: $subColor;
 }
 
 body {
