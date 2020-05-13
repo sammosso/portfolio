@@ -8,10 +8,6 @@
     src: url(fonts/Montserrat-Regular.ttf);
 }
 
-* {
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none; 
 }
@@ -30,7 +26,7 @@ button {
     width: 25%;
     border: 2px solid white;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 25px;
     color: #d0dbdf;
     background-color: #587b8d;
@@ -40,6 +36,13 @@ button:hover {
     color: #d0dbdf;
     background-color: #585858;
     transition: all .5s ease;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:40%;
+    text-align: center;
 }
 
 .grid-container {
@@ -69,18 +72,25 @@ button:hover {
 }
 
 .nav > div > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
     float: right;
     color: #585858;
 }
 
-.social {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+.nav > div > a:hover {
+    color: #ffffff;
+    transition: all .5s ease;
 }
 
-.social > a {
-    color: #585858;
+.social-img {
+    width: 30px;
+    padding: 5px;
+}
+
+.social-img:hover {
+
+    transition: all .5s ease;
 }
 
 /*Main Column*/
@@ -112,7 +122,7 @@ h1 {
 }
 
 .section1, .section2, .section3, .section4 {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 /*Skills*/
@@ -129,12 +139,14 @@ h1 {
 }
 
 .img-skill {
+    min-width: 60%;
     width: 90%;
 }
 
 /*Recent Work*/
 .projects {
     margin-top: 50px;
+    margin-bottom: 110px;
     display: flex;
     justify-content: space-around;
 }

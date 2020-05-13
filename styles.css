@@ -2,7 +2,8 @@ h1, h2 {
   font-family: PlayfairRegular, Arial, sans-serif; }
 
 h2 {
-  font-size: 250%; }
+  font-size: 250%;
+  color: #585858; }
 
 body {
   font-family: Mont-Reg; }
