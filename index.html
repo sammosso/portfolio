@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-modal.css">
     <script src="site.js"></script>
-    <title>Designer | Developer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Designer / Developer</title>
 </head>
 <body>
     <div class="root">
@@ -35,9 +37,9 @@
                 <div class="section1">
                     <img src="assets/images/main.jpg" alt="San Diego Beach">
                         <h1>Sarah Mosso<br>
-                        Designer | Developer</h1>
+                        Designer / Developer</h1>
                 </div>
-                
+
                 <div class="innerContent">
                     <!--Section 2: Top Skills-->
                     <div id="skills" class="section2">
@@ -94,12 +96,23 @@
                                 </div>
                             </div>
                         </div>
-                        <a href=""><button>See all projects.</button></a>
+                        <!-- The Modal Trigger -->
+                        <button id="myBtn">See all projects.</button>
+                        <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header"><span class="close">&times;</span></div>
+                                <div class="modal-body">
+                                    <h3>Oops!</h3>
+                                    <p>This page is currently under maintenance. <br> Please check back soon!</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <!--Section 4: Contact Info-->
                     <div id="contact" class="section4">
-                        <h2>need something?</h2>
+                        <h2>in need of something?</h2>
                         <p>A new logo? An ad campaign? A custom website?</p>
                         <a href="mailto:sarahmosso@outlook.com"><button>Let's talk.</button></a>
                     </div>
@@ -110,5 +123,7 @@
             </div>
     </div>
     </div>
+    <script src="site.js"></script>
+    
 </body>
 </html>
