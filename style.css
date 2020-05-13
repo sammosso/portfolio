@@ -109,6 +109,7 @@ hr {
     position: relative;
     text-align: center;
     color: white;
+    margin-bottom: 200px;
 }
 
 .section1 > img {
@@ -126,7 +127,7 @@ h1 {
     color: #ffffff;
 }
 
-.section1, .section2, .section3, .section4 {
+#skills, #portfolio, #contact {
     margin-bottom: 200px;
 }
 

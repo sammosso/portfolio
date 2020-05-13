@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Designer / Developer</title>
 </head>
-<body>
+<body onload="animateHTML().init();">
     <div class="root">
         <div class="grid-container">
             <!--Sidebar Navigation-->
@@ -42,25 +42,25 @@
 
                 <div class="innerContent">
                     <!--Section 2: Top Skills-->
-                    <div id="skills" class="section2">
+                    <div id="skills" class="hidden">
                         <h2>skills</h2>
                         <ul class="skills-list">
                             <li><img src="assets/images/skills/design.jpg" alt="design icon" class="img-skill"></li>
-                            <li>Photoshop / Illustrator / InDesign</li>
+                            <li>Graphic Design</li>
                             <li><img src="assets/images/skills/brand.jpg" alt="branding icon" class="img-skill"></li>
-                            <li> Brand Identity</li>
+                            <li>Brand Identity</li>
                             <li><img src="assets/images/skills/html.jpg" alt="html icon" class="img-skill"></li>
-                            <li>HTML / CSS</li>
+                            <li>Web Design</li>
                             <li><img src="assets/images/skills/javascript.jpg" alt="coding icon" class="img-skill"></li>
-                            <li>JavaScript</li>
+                            <li>UI Development</li>
                             <li><img src="assets/images/skills/Bootstrap.jpg" alt="bootstrap icon" class="img-skill"></li>
-                            <li>Bootstrap</li>
+                            <li>Responsive Design</li>
                             <li><img src="assets/images/skills/accessibility.jpg" alt="accessibility icon" class="img-skill"></li>                        
                             <li>Web Accessibility (WCAG)</li>
                         </ul>
                     </div>
                     <!--Section 3: Projects-->
-                    <div id="portfolio" class="section3">
+                    <div id="portfolio" class="hidden">
                         <h2>recent work</h2>
                         <div class="projects">
                             <div class="card">
@@ -111,7 +111,7 @@
                     </div>
                     
                     <!--Section 4: Contact Info-->
-                    <div id="contact" class="section4">
+                    <div id="contact" class="hidden">
                         <h2>in need of something?</h2>
                         <p>A new logo? An ad campaign? A custom website?</p>
                         <a href="mailto:sarahmosso@outlook.com"><button>Let's talk.</button></a>
