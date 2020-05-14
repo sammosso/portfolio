@@ -21,7 +21,7 @@ ul {
     list-style: none;
 }
 
-button {
+.button {
     font-size: 16px;
     width: 25%;
     border: 2px solid white;
@@ -32,7 +32,7 @@ button {
     background-color: #587b8d;
 }
 
-button:hover {
+.button:hover {
     color: #d0dbdf;
     background-color: #585858;
     transition: all .5s ease;
@@ -124,11 +124,11 @@ hr {
     transition: all .5s ease;
   }
 
-/*Collapse*/
-.collapse {
+/*Toggle Navbar*/
+.toggle {
     left: 20%;
     top: 0;
-    visibility: visible;
+    border: 0;
     background-color:#dddddd;
     opacity: 65%;
     position: fixed;
@@ -137,6 +137,7 @@ hr {
     z-index: 3;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .pointer {
