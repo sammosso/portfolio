@@ -1,12 +1,24 @@
+window.onload=function(){
+
+function closeNav() {
+    var sidebar = document.getElementsByClassName('side-container');
+
+}
+
+closeNav();
+
+// Viewport Animation
 var animateHTML = function() {
     var elements;
     var windowHeight;
-  
+    
+    //Grabbing the sections and return the Window's Height
     function init() {
       elements = document.querySelectorAll('.hidden');
       windowHeight = window.innerHeight;
     }
   
+    // Loop through sections
     function checkPosition() {
       for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
@@ -26,7 +38,7 @@ var animateHTML = function() {
     checkPosition();
   }();
 
-
+//Scrolling Animation
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -52,8 +64,9 @@ $(document).ready(function(){
     });
   });
 
+//Modal for loose ends
 function modal(){
-        // Get the modal
+    // Get the modal
     var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
@@ -81,3 +94,5 @@ function modal(){
 }
 
 modal();
+
+}
