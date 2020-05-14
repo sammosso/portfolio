@@ -49,8 +49,41 @@ hr {
     width: 100%;
 }
 
+/*Top Nav*/
+.top-nav{
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #d0dbdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.top-nav-links > div{
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.top-nav-links > div > a {
+    padding-right: 10px;
+    padding-left: 10px;
+    float: right;
+    color: #585858;
+}
+
+.top-nav-links > div > a:hover {
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+
 /*Side Column*/
 .side-container {
+    visibility: visible;
+    margin-top: -50px;
     box-sizing: border-box;
     background-color:#d0dbdf;
     position: fixed;
@@ -94,6 +127,8 @@ hr {
 
 /*Main Column*/
 .main {
+    visibility: visible;
+    margin-top: -50px;
     width: 80%;
     float: right;
     text-align: center;
