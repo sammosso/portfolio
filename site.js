@@ -1,11 +1,13 @@
 window.onload=function(){
 
-function closeNav() {
+function projectsLinks() {
     var sidebar = document.getElementsByClassName('side-container');
+    var topNav = document.getElementsByClassName('top-nav');
+    var main = document.getElementsByClassName('main');
 
 }
 
-closeNav();
+projectsLinks();
 
 // Viewport Animation
 var animateHTML = function() {
@@ -18,7 +20,7 @@ var animateHTML = function() {
       windowHeight = window.innerHeight;
     }
   
-    // Loop through sections
+    // Loop through sections remove hidden attriubte, add fade-in
     function checkPosition() {
       for (var i = 0; i < elements.length; i++) {
         var element = elements[i];

@@ -79,7 +79,6 @@ hr {
     transition: all .5s ease;
 }
 
-
 /*Side Column*/
 .side-container {
     visibility: visible;
@@ -124,6 +123,25 @@ hr {
 .social-img:hover {
     transition: all .5s ease;
   }
+
+/*Collapse*/
+.collapse {
+    left: 20%;
+    top: 0;
+    visibility: visible;
+    background-color:#dddddd;
+    opacity: 65%;
+    position: fixed;
+    width: 2%;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.pointer {
+    fill: #ffffff;
+}
 
 /*Main Column*/
 .main {
@@ -179,28 +197,40 @@ h1 {
 }
 
 .img-skill {
-    min-width: 70%;
-    max-width: 90%;
+    width: 125px;
 }
 
 /*Recent Work*/
 .projects {
+    
     margin-top: 50px;
-    margin-bottom: 110px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-around;
 }
 
 .card {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+}
+
+.card:hover {
+    background-color: #dddddd;
+    transition: all 3s ease;
+}
+
+hr {
+    border-color: #dddddd;
+}
+
+.inner-caption {
+    margin: 25px;
 }
 
 .inner {
     overflow: hidden;
 }
 
-.inner > a > img {
+.inner > img {
     width: 300px;
     height: 200px;
     display: block;
@@ -211,7 +241,7 @@ h1 {
     transition: all 3s ease;
 }
 
-.inner:hover img{
+.card:hover img{
     -ms-transform: scale(1.25); /* IE 9 */
     -webkit-transform: scale(1.25); /* Safari 3-8 */
     transform: scale(1.15); 
@@ -225,5 +255,5 @@ h1 {
     bottom: 0;
     background-color: #A9A9A9;
     width: 100%;
-    height: 100px;
+    height: 85px;
 }

@@ -23,9 +23,9 @@
             </nav>
         </div>
         <div class="grid-container">
-            <!--Sidebar Navigation-->
+
+            <!-- SIDEBAR -->
             <aside class="side-container">     
-               <!--  <img src="assets/images/arrow.svg" alt="pointer" class="pointer"> --> 
                 <!--Profile Image-->          
                 <img class="profile-img" src="assets\images\0 (2).jpg" alt="Sarah Mosso profile shot">
                 <!--Nav-->
@@ -43,7 +43,14 @@
                     <a href="mailto:sarahmosso@outlook.com"><img src="assets/images/social-media/mail.svg" alt="Sarah Mosso's email" class="social-img"></a>
                 </div>
             </aside>
-            <div id="top" class="main"> <!--Add JS scroll transitions-->
+
+            <!-- COLLAPSE SIDEBAR -->
+            <div class="collapse">
+                <img src="assets/images/arrow.svg" alt="pointer icon" class="pointer">
+            </div>
+
+            <!-- MAIN -->
+            <div id="top" class="main"> 
                 <!--Section 1: Welcome Image-->
                 <div class="section1">
                     <img src="assets/images/main.jpg" alt="San Diego Beach">
@@ -75,36 +82,42 @@
                         <h2>recent work</h2>
                         <div class="projects">
                             <div class="card">
-                                <div class="inner">
-                                    <a href="#top"><img src="assets/images/projects/vit-portfolio.png" alt="Screenshot of Sarah Mosso's portfolio Website" class="msta"></a>
-                                </div>
+                                <a href="https://sammosso.github.io/portfolio/">
+                                    <div class="inner">
+                                        <img src="assets/images/projects/vit-portfolio.png" alt="Screenshot of Sarah Mosso's portfolio Website" class="msta">
+                                    </div>
                                 <hr>
                                 <div class="inner-caption">
                                     <h3>Vets in Tech - Project</h3>
                                     <p>Front End development of a portfolio website.</p>
                                 </div>
+                            </a>
                             </div>
     
                             <div class="card">
-                                <div class="inner">
-                                    <a href="http://mstaconnect.azurewebsites.net/" target="_blank"><img src="assets/images/projects/msta-connect.png" alt="Screenshot of MSTA Connect login page" class="msta"></a>
-                                </div>
-                                <hr>
-                                <div class="inner-caption">
-                                    <h3>MSTA Connect</h3>
-                                    <p>An internal web application for Microsoft's Military Spouse Technology Academy.</p>
-                                </div>
+                                <a href="http://mstaconnect.azurewebsites.net/" target="_blank">
+                                    <div class="inner">
+                                        <img src="assets/images/projects/msta-connect.png" alt="Screenshot of MSTA Connect login page" class="msta">
+                                    </div>
+                                    <hr>
+                                    <div class="inner-caption">
+                                        <h3>MSTA Connect</h3>
+                                        <p>An internal web application for Microsoft's Military Spouse Technology Academy.</p>
+                                    </div>
+                                </a>
                             </div>
     
                             <div class="card">
-                                <div class="inner">
-                                    <a href=" https://sammosso.github.io/lakesfootball/" target="_blank"><img src="assets/images/projects/lakes-copy.png" alt="Screenshot of Lakes Football page" class="msta"></a>
-                                </div>
-                                <hr>
-                                <div class="inner-caption">
-                                    <h3>Website Re-Creation</h3>
-                                    <p>A duplicated website for development learning.</p>
-                                </div>
+                                <a href=" https://sammosso.github.io/lakesfootball/" target="_blank">
+                                    <div class="inner">
+                                        <img src="assets/images/projects/lakes-copy.png" alt="Screenshot of Lakes Football page" class="msta">
+                                    </div>
+                                    <hr>
+                                    <div class="inner-caption">
+                                        <h3>Website Re-Creation</h3>
+                                        <p>A duplicated website for development learning.</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <!-- The Modal Trigger -->
