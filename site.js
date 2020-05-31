@@ -1,20 +1,6 @@
 window.onload=function(){
 
-          //Mobile Device Width Change
-          function mobileView(m) {
-            var sidebar = document.querySelector('.side-container');
-            if(m.matches) {
-              sidebar.style.visibility == "hidden";
-            }
-          }
-
-          var m = window.matchMedia("(width: 480px)");
-          mobileView(m);
-          m.addListener(mobileView);
-
-
-
-          // When the user clicks the button, close the sidebar 
+/*           // When the user clicks the button, close the sidebar 
           function toggleNav() {
 
             var sidebar = document.getElementById('sidebar');
@@ -37,7 +23,7 @@ window.onload=function(){
             }
           }
 
-          toggleNav();
+          toggleNav(); */
 
 
 

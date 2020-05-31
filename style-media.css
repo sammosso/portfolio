@@ -1,0 +1,76 @@
+/*Responsive CSS*/
+
+@media only screen and (max-width: 1300px) {
+    .side-container {
+        visibility: hidden;
+    }
+
+    #toggleBtn {
+        visibility: hidden;
+    }
+
+    .top-nav {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .section1 {
+        margin-bottom: 150px;
+    }
+
+    .section1 > img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .skills-list > li{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    } 
+
+}
+
+@media only screen and (max-width: 480px) {
+    .side-container {
+        visibility: hidden;
+    }
+
+    #toggleBtn {
+        visibility: hidden;
+    }
+
+    .top-nav {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .section1 > img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .skills-list > li{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    } 
+
+    .img-skill {
+        margin-left: -40px;
+    }
+
+
+}
