@@ -1,117 +1,118 @@
-window.onload=function(){
+window.onload = function () {
 
-/*           // When the user clicks the button, close the sidebar 
-          function toggleNav() {
+  /*           // When the user clicks the button, close the sidebar 
+            function toggleNav() {
 
-            var sidebar = document.getElementById('sidebar');
-            var button = document.getElementById("toggleBtn");
-            var main = document.getElementById("top");
-            var toggleBtn = document.getElementById('toggleBtn');
+              var sidebar = document.getElementById('sidebar');
+              var button = document.getElementById("toggleBtn");
+              var main = document.getElementById("top");
+              var toggleBtn = document.getElementById('toggleBtn');
 
-            button.onclick = function () {
-              toggleBtn.blur(); 
+              button.onclick = function () {
+                toggleBtn.blur(); 
 
-              if (sidebar.style.visibility == "visible") {
-                sidebar.style.visibility = "collapse";
-                main.style.width = "100%";
-                toggleBtn.style.left = "0";
-              } else {
-                sidebar.style.visibility = "visible";
-                main.style.width = "80%";
-                toggleBtn.style.left = "20%";
-              }
-            }
-          }
-
-          toggleNav(); */
-
-
-
-          // Viewport Animation BODY ONLOAD
-          var animateHTML = function () {
-            var elements;
-            var windowHeight;
-
-            //Grabbing the sections and return the Window's Height
-            function init() {
-              elements = document.querySelectorAll('.hidden');
-              windowHeight = window.innerHeight;
-            }
-
-            // Loop through sections remove hidden attriubte, add fade-in
-            function checkPosition() {
-              for (var i = 0; i < elements.length; i++) {
-                var element = elements[i];
-                var positionFromTop = elements[i].getBoundingClientRect().top;
-
-                if (positionFromTop - windowHeight <= 0) {
-                  element.classList.add('fade-in-element');
-                  element.classList.remove('hidden');
+                if (sidebar.style.visibility == "visible") {
+                  sidebar.style.visibility = "collapse";
+                  main.style.width = "100%";
+                  toggleBtn.style.left = "0";
+                } else {
+                  sidebar.style.visibility = "visible";
+                  main.style.width = "80%";
+                  toggleBtn.style.left = "20%";
                 }
               }
             }
 
-            window.addEventListener('scroll', checkPosition);
-            window.addEventListener('resize', init);
-
-            init();
-            checkPosition();
-          }();
+            toggleNav(); */
 
 
 
-          //Scrolling Animation
-          $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
+  // Viewport Animation BODY ONLOAD
+  var animateHTML = function () {
+    var elements;
+    var windowHeight;
 
-              // Make sure this.hash has a value before overriding default behavior
-              if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+    //Grabbing the sections and return the Window's Height
+    function init() {
+      elements = document.querySelectorAll('.hidden');
+      windowHeight = window.innerHeight;
+    }
 
-                // Store hash
-                var hash = this.hash;
+    // Loop through sections remove hidden attriubte, add fade-in
+    function checkPosition() {
+      for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        var positionFromTop = elements[i].getBoundingClientRect().top;
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                  scrollTop: $(hash).offset().top
-                }, 800, function () {
+        if (positionFromTop - windowHeight <= 0) {
+          element.classList.add('fade-in-element');
+          element.classList.remove('hidden');
+        }
+      }
+    }
 
-                  // Add hash (#) to URL when done scrolling (default click behavior)
-                  window.location.hash = hash;
-                });
-              } // End if
-            });
-          });
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+
+    init();
+    checkPosition();
+  }();
 
 
 
-          //Modal for popups
-          function modal() {
-            var modal = document.getElementById("myModal");
-            var btn = document.getElementById("myBtn");
-            var span = document.getElementsByClassName("close")[0];
+  //Scrolling Animation
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
 
-            // When the user clicks the button, open the modal 
-            btn.onclick = function () {
-              modal.style.display = "block";
-            }
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-              modal.style.display = "none";
-            }
+        // Store hash
+        var hash = this.hash;
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-          }
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
 
-          modal();
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+
+
+/*
+  //Modal for popups
+  function modal() {
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  }
+
+  modal();
+*/
 
 }
