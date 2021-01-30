@@ -83,5 +83,15 @@
         margin-left: -40px;
     }
 
+    .inner-caption {
+        font-size: 16px;
+        width: 190px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 25px;
+        color: #d0dbdf;
+        background-color: #587b8d;
+    }
 
 }
