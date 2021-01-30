@@ -1,11 +1,16 @@
+/*Purpose*/
+#purpose {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8em;
+}
 
-.scroll {
-    margin-top: 0;
-    background-color: #D0DBDF;
-    padding: 10px 20px 10px 20px;
-    border-radius: 50%;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#purpose > img {
+    max-width: 50%;
+    margin-right: 4em;
+    box-shadow: 10px 2px 30px #e6e6e6;
+}
+
+.body > ul {
+    text-align: left;
 }

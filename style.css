@@ -79,7 +79,7 @@ hr {
     transition: all .5s ease;
 }
 
-/*Side Column*/
+/*Sidebar*/
 .side-container {
     visibility: visible;
     margin-top: -50px;
@@ -142,13 +142,7 @@ hr {
     cursor: pointer;
 }
 
-.pointer {
-    fill: #ffffff;
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-/*Main Column*/
+/*Main Content*/
 .main {
     visibility: visible;
     margin-top: -50px;
